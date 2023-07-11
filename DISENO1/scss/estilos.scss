@@ -71,7 +71,76 @@ nav {
             border-radius: 1.5rem;
             color: #fff;
             text-decoration: none;
+        }
+    }
+}
 
+.beta {
+    display: grid;
+    gap: .8rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 3rem auto;
+    .card {
+        display: flex;
+        .card-izquierda {
+            box-sizing: border-box;
+            padding: .4rem;
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.3rem;
+                height: 2.3rem;
+                border-radius: 50%;
+                background: $color-secundario;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+        .card-derecha {
+            box-sizing: border-box;
+            padding: .4rem;
+            h3 {
+                font-weight: 600;
+                margin-bottom: .4rem;
+            }
+            p {
+                font-weight: 300;
+                line-height: 1.4rem;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+.gama {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .pa-logo {
+        width: 3rem;
+        height: 3rem;
+        background-image: url(../recursos/logo1.png);
+        background-size: cover;
+        background-position: center;
+        &:nth-child(1){
+            background-image: url(../recursos/logo1.png);
+        }
+        &:nth-child(2){
+            background-image: url(../recursos/logo2.png);
+        }
+        &:nth-child(3){
+            background-image: url(../recursos/logo3.png);
+        }
+        &:nth-child(4){
+            background-image: url(../recursos/logo4.png);
+        }
+        &:nth-child(5){
+            background-image: url(../recursos/logo5.png);
+        }
+        &:nth-child(6){
+            background-image: url(../recursos/logo6.png);
         }
     }
 }
